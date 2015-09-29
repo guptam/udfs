@@ -56,7 +56,7 @@ public class AvroDirectRecordReader {
   }
 
   private static final Schema DEFAULT_SCHEMA = new org.apache.avro.Schema.Parser().parse(
-    "{\"type\":\"record\",\"name\":\"ClassifierPredicate\",\"namespace\":\"com.sift.classifier.avro\",\"fields\":[{\"name\":\"key\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}]}");
+    "{\"type\":\"record\",\"name\":\"FooBar\",\"namespace\":\"com.foo.bar.avro\",\"fields\":[{\"name\":\"key\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}]}");
 
   /** Deserialize Avro bytes. */
   public static Object fromBinary(Schema schema, byte[] binary) throws IOException {
